@@ -1,0 +1,60 @@
+
+body {
+background:url(../img/fondo.JPG); 
+text-align: center;    
+}
+.btn-primary
+ {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: red;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: black;
+  color: white
+}
+.titulo {
+     font-size: 50px;
+     text-transform: uppercase;
+     letter-spacing: 7px;
+     color: red;
+}
+.slider {
+     width: 100%;
+     margin: auto;
+     overflow: hidden; 
+}
+.slider ul {
+     display: flex;
+     padding: 0;
+     width: 400%;
+
+     animation: cambio 40s infinite alternate linear; 
+     animation-timing-function: ease-in;
+
+}
+.slider li {
+     width: 100%;
+     list-style: none;
+}
+.slider img {
+     width: 100%;
+}
+@keyframes cambio {
+     0% {margin-left: 0;}
+     20% {margin-left: 0;}
+
+     25% {margin-left: -100%;}
+     45% {margin-left: -100%;}
+
+     50% {margin-left: -200%;}
+     70% {margin-left: -200%;}
+
+     75% {margin-left: -300%;}
+     100% {margin-left: -300%;}
+     
+   
+}
